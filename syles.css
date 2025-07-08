@@ -1,0 +1,70 @@
+body {
+  background-color: #0f0f0f;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  text-align: center;
+  padding: 20px;
+  background-color: #1c1c1c;
+}
+
+.container {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.tool-card {
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.tool-card h2 {
+  margin-top: 0;
+  color: #00ff99;
+}
+
+.reviews {
+  font-style: italic;
+  color: #ccc;
+}
+
+.unlock-button {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #00ff99;
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.unlock-button:hover {
+  background-color: #00cc77;
+}
+
+.unlock-section {
+  margin-top: 10px;
+}
+
+.unlock-note {
+  font-size: 0.9em;
+  color: #ccc;
+  margin-left: 10px;
+}
+
+.password-input {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 5px;
+  border: none;
+  width: calc(100% - 16px);
+}
