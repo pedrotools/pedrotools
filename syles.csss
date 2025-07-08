@@ -1,0 +1,134 @@
+/* Reset & Body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #1a0f00;
+  color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  background-color: #ffa500;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+}
+
+header img {
+  height: 80px;
+  margin-bottom: 10px;
+}
+
+header h1 {
+  font-size: 2.2em;
+  margin-bottom: 5px;
+}
+
+header p {
+  font-size: 1em;
+}
+
+/* Tool Grid */
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 30px 20px;
+}
+
+/* Tool Card */
+.tool-card {
+  background-color: #331a00;
+  border: 1px solid #444;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+  transition: transform 0.2s ease;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+}
+
+.tool-card h2 {
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+/* Price & Description */
+.tool-card p {
+  margin: 5px 0;
+}
+
+/* Reviews */
+.reviews {
+  font-style: italic;
+  font-size: 0.9em;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* Unlock Button & Input */
+.unlock-section {
+  margin-top: 15px;
+}
+
+.password-input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: none;
+}
+
+.unlock-button {
+  width: 100%;
+  background-color: #ffa500;
+  color: #000;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.unlock-button:hover {
+  background-color: #cc8400;
+}
+
+.unlock-note {
+  display: block;
+  font-size: 0.85em;
+  color: #ccc;
+  margin-top: 5px;
+}
+
+/* Payment Section */
+section.payment {
+  text-align: center;
+  padding: 30px;
+  background-color: #331a00;
+  margin-top: 40px;
+}
+
+section.payment h2 {
+  color: #ffa500;
+  margin-bottom: 10px;
+}
+
+section.payment ul {
+  list-style: none;
+  padding: 0;
+}
+
+section.payment li {
+  margin: 10px 0;
+  color: #f5f5f5;
+}
