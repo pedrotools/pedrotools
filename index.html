@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Smithy Tools Store</title>
+  <meta name="description" content="Private Pro Tools – EX4 Unpacker, APK Analyzer, Phone Tracker, and more. Pay with Crypto, PayPal, or Gift Cards.">
+  <link rel="icon" href="favicon.ico" />
   <style>
     body {
       background-color: #0d0d0d;
@@ -103,44 +105,181 @@
 </head>
 <body>
   <header>
-    <img src="jfh.JPG" alt="Smithy Tools Logo">
+    <img src="jfh.JPG" alt="Smithy Tools Logo" />
     <h1>🔥 Smithy Tools Store</h1>
     <p>Advanced Private Tools – DM <a href="https://t.me/smithydeveloper" target="_blank">@smithydeveloper</a> to unlock</p>
   </header>
 
   <div class="container">
     <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Search tools..." onkeyup="filterTools()">
+      <input type="text" id="searchInput" placeholder="Search tools..." onkeyup="filterTools()"/>
     </div>
-
-    <div class="tools-grid" id="toolsGrid">
-      <!-- Tool Cards Will Go Here -->
-    </div>
+    <div class="tools-grid" id="toolsGrid"></div>
   </div>
 
   <div class="payment-info">
     <h3>💳 Payment Methods</h3>
     <p>Crypto (BTC, ETH, USDT), PayPal, or Gift Cards are accepted.</p>
     <p>After payment, DM <a href="https://t.me/smithydeveloper" target="_blank">@smithydeveloper</a> to receive your unlock password.</p>
+    <div style="margin-top: 20px;">
+      <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal" style="height:40px; margin: 0 10px;">
+      <img src="https://cryptologos.cc/logos/bitcoin-btc-logo.png?v=032" alt="Crypto" style="height:40px; margin: 0 10px;">
+      <img src="https://cdn-icons-png.flaticon.com/512/3081/3081559.png" alt="Gift Card" style="height:40px; margin: 0 10px;">
+    </div>
   </div>
 
   <script>
     const tools = [
-      { name: "EX4_Unpacker_Pro", price: "$100", description: "Unpack compiled EX4 files to MQ4." },
-      { name: "APK_Analyzer_Pro", price: "$125", description: "Decompile, analyze, and rebuild APKs." },
-      { name: "GameMod_Builder", price: "$100", description: "Create game mods using memory patching." },
-      { name: "Phone_SpyX_Viewer", price: "$120", description: "Analyze and view phone monitor data." },
-      { name: "Social_TrackSuite", price: "$150", description: "Track social media user activity." },
-      { name: "InstaKill_Pro", price: "$125", description: "Disable or disrupt Instagram sessions." },
-      { name: "FTK_8.1", price: "$150", description: "Full disk forensic toolset for Windows." },
-      { name: "Cloud_Crack_Agent", price: "$120", description: "Crack weakly secured cloud services." },
-      { name: "iOS_Decompiler", price: "$120", description: "Reverse engineer iOS binaries." },
-      { name: "Unity_Dumper", price: "$180", description: "Dump Unity game assets from APKs." },
-      { name: "Browser_Cookie_Extractor", price: "$130", description: "Extract saved browser cookies and sessions." },
-      { name: "Account_Deleter_v2", price: "$130", description: "Automate deletion of app and web accounts." },
-      { name: "DLL_Injection_Kit", price: "$100", description: "Inject DLLs into Windows processes." },
-      { name: "GeoIP_Tracker", price: "$150", description: "Track IP addresses with geolocation." },
-      { name: "Crypto_Wallet_Profiler", price: "$200", description: "Analyze blockchain wallet histories." },
+      {
+        name: "EX4_Unpacker_Pro",
+        price: "$100",
+        description: "Unpack compiled EX4 files to MQ4.",
+        reviews: [
+          { user: "ForexKing21", stars: 5, text: "Unpacked perfectly – no bugs!" },
+          { user: "MetaDevX", stars: 4, text: "The decompilation was almost 1:1." },
+          { user: "TradeWizard", stars: 5, text: "Highly recommend to MT4 devs." }
+        ]
+      },
+      {
+        name: "APK_Analyzer_Pro",
+        price: "$125",
+        description: "Decompile, analyze, and rebuild APKs.",
+        reviews: [
+          { user: "ApkGuru", stars: 5, text: "Amazing UI and breakdown of APK structure." },
+          { user: "CoderAlpha", stars: 5, text: "Helped me mod an app easily." },
+          { user: "M0b1leH4x", stars: 4, text: "Rebuild function works great!" }
+        ]
+      },
+      {
+        name: "GameMod_Builder",
+        price: "$100",
+        description: "Create game mods using memory patching.",
+        reviews: [
+          { user: "Modcrafter", stars: 5, text: "I modded a mobile game in 10 minutes." },
+          { user: "TrainerX", stars: 5, text: "Super intuitive for beginners." },
+          { user: "PatchLord", stars: 4, text: "Legit tool for trainers." }
+        ]
+      },
+      {
+        name: "Phone_SpyX_Viewer",
+        price: "$120",
+        description: "Analyze and view phone monitor data.",
+        reviews: [
+          { user: "SpyBotZ", stars: 5, text: "Interface is clean and easy to navigate." },
+          { user: "LogDigger", stars: 4, text: "Recovered useful data from an old dump." },
+          { user: "ViewMaster", stars: 5, text: "Exactly what I needed." }
+        ]
+      },
+      {
+        name: "Social_TrackSuite",
+        price: "$150",
+        description: "Track social media user activity.",
+        reviews: [
+          { user: "InstaScan", stars: 5, text: "Great insight into IG and Twitter activity." },
+          { user: "AnalytixPro", stars: 5, text: "Accurate tracking and reports." },
+          { user: "GhostTrack", stars: 4, text: "Awesome for social audits." }
+        ]
+      },
+      {
+        name: "InstaKill_Pro",
+        price: "$125",
+        description: "Disable or disrupt Instagram sessions.",
+        reviews: [
+          { user: "IGKilla", stars: 5, text: "Works as advertised!" },
+          { user: "SessionWipe", stars: 4, text: "Session killer is instant." },
+          { user: "DeAuthDude", stars: 5, text: "Good tool for testing." }
+        ]
+      },
+      {
+        name: "FTK_8.1",
+        price: "$150",
+        description: "Full disk forensic toolset for Windows.",
+        reviews: [
+          { user: "DiskHunter", stars: 5, text: "Powerful and detailed analysis features." },
+          { user: "WinForensics", stars: 5, text: "Handled large disk images with ease." },
+          { user: "AuditMan", stars: 5, text: "Top-tier forensic tool." }
+        ]
+      },
+      {
+        name: "Cloud_Crack_Agent",
+        price: "$120",
+        description: "Crack weakly secured cloud services.",
+        reviews: [
+          { user: "CloudBrute", stars: 5, text: "Tested on 3 sandboxed accounts – worked well." },
+          { user: "RainHack", stars: 4, text: "Needs good wordlists but works." },
+          { user: "AccessNow", stars: 5, text: "Got access in under 10 mins." }
+        ]
+      },
+      {
+        name: "iOS_Decompiler",
+        price: "$120",
+        description: "Reverse engineer iOS binaries.",
+        reviews: [
+          { user: "ObjCSpy", stars: 5, text: "Decompiler output is super readable." },
+          { user: "ByteCodeLab", stars: 5, text: "Excellent for static analysis." },
+          { user: "iHackTools", stars: 4, text: "Clean UX and fast parsing." }
+        ]
+      },
+      {
+        name: "Unity_Dumper",
+        price: "$180",
+        description: "Dump Unity game assets from APKs.",
+        reviews: [
+          { user: "UnityHunter", stars: 5, text: "Ripped models and sounds flawlessly." },
+          { user: "AssetNinja", stars: 5, text: "My go-to Unity ripper now." },
+          { user: "APK2Asset", stars: 4, text: "Good compression on export." }
+        ]
+      },
+      {
+        name: "Browser_Cookie_Extractor",
+        price: "$130",
+        description: "Extract saved browser cookies and sessions.",
+        reviews: [
+          { user: "CookieSniffer", stars: 5, text: "Extracted all cookies in seconds." },
+          { user: "SessionGhost", stars: 5, text: "Supports Chrome and Firefox – nice!" },
+          { user: "GrabberGuy", stars: 4, text: "Perfect for session cloning." }
+        ]
+      },
+      {
+        name: "Account_Deleter_v2",
+        price: "$130",
+        description: "Automate deletion of app and web accounts.",
+        reviews: [
+          { user: "AccountZero", stars: 5, text: "Wiped 15 junk accounts fast." },
+          { user: "CleanSlate", stars: 5, text: "Saves so much time!" },
+          { user: "ByeBot", stars: 4, text: "No manual work needed." }
+        ]
+      },
+      {
+        name: "DLL_Injection_Kit",
+        price: "$100",
+        description: "Inject DLLs into Windows processes.",
+        reviews: [
+          { user: "Injecto", stars: 5, text: "Stealth mode works great." },
+          { user: "KernelX", stars: 5, text: "Handles 64-bit and 32-bit." },
+          { user: "ThreadHijack", stars: 4, text: "Worked flawlessly on test apps." }
+        ]
+      },
+      {
+        name: "GeoIP_Tracker",
+        price: "$150",
+        description: "Track IP addresses with geolocation.",
+        reviews: [
+          { user: "GeoSniper", stars: 5, text: "Fast and accurate IP info." },
+          { user: "MapSpy", stars: 5, text: "Maps and region details are spot on." },
+          { user: "IPInsight", stars: 4, text: "Great for OSINT work." }
+        ]
+      },
+      {
+        name: "Crypto_Wallet_Profiler",
+        price: "$200",
+        description: "Analyze blockchain wallet histories.",
+        reviews: [
+          { user: "ChainScanner", stars: 5, text: "Tracked multiple ETH wallets flawlessly." },
+          { user: "BlockSleuth", stars: 5, text: "Super detailed transaction view." },
+          { user: "TXLogger", stars: 4, text: "Great for forensic analysis." }
+        ]
+      }
     ];
 
     const grid = document.getElementById("toolsGrid");
@@ -152,6 +291,16 @@
         <h2>${tool.name}</h2>
         <p><strong>Price:</strong> ${tool.price}</p>
         <p>${tool.description}</p>
+        <div><strong>Reviews:</strong></div>
+        <ul style="padding-left: 20px; color: #ccc; list-style: none;">
+          ${tool.reviews.map(r => `
+            <li style="margin-bottom: 10px;">
+              <strong>${r.user}</strong> — <span style="color: gold;">${'★'.repeat(r.stars)}${'☆'.repeat(5 - r.stars)}</span><br>
+              “${r.text}”
+            </li>
+          `).join("")}
+        </ul>
+        <button class="unlock-button" style="margin-bottom: 10px;">Leave a Review</button>
         <div class="unlock-section">
           <input type="password" placeholder="Enter password to unlock">
           <button class="unlock-button">Unlock & Download</button>
@@ -171,3 +320,4 @@
   </script>
 </body>
 </html>
+
